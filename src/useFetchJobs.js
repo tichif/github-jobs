@@ -66,7 +66,6 @@ export default function useFetchJobs(params, page) {
           type: ACTIONS.GET_DATA,
           payload: res.data,
         });
-        console.log(res.data);
       })
       .catch((err) => {
         if (axios.isCancel(err)) return;
